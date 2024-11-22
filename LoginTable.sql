@@ -1,0 +1,12 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [UserId]
+      ,[FirstName]
+      ,[LastName]
+      ,[Email]
+      ,[Password]
+      ,[IsActive]
+      ,[CreatedAt]
+      ,[FailedLoginAttempts]
+      ,[IsLocked]
+      ,[LockoutEnd]
+  FROM [LoginDB].[dbo].[Users]
